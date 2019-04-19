@@ -65,6 +65,8 @@ def run_ssd(img_path,priorbox_path):
     box_var   = priorbox[1].reshape((NUM_RESULTS,4))
     loc =  outputs[0].reshape((NUM_RESULTS, 4))
     conf = outputs[1].reshape((NUM_RESULTS, NUM_CLASSES))
+
+    #compute softmax
     conf = [[x/(x+y),y/(x+y)] for x,y in np.exp(conf)]
 
     # Post Process
@@ -94,7 +96,6 @@ def run_ssd(img_path,priorbox_path):
         xmax *= 300 #input width
         ymax *= 300 #input height
 
-        # Skip the first catch-all class.
         score = conf[i][1];
 
         if score > 0.9:
