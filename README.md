@@ -14,7 +14,7 @@ the package you can find at
 you can find the pedestrian detect model of this project at [[here]](https://github.com/zlingkang/mobilenet_ssd_pedestrian_detection).
 
 ## Usage
-extract priorbox 
+extract priorbox (you need change the caffe_root path to yours in priorbox.py, or may need install caffe-ssd first, caffe-ssd you can find at [[here]](https://github.com/weiliu89/caffe))
   
 ```
 $ python priorbox.py
