@@ -9,12 +9,21 @@ or you can install it first by
 pip install rknn_toolkit-0.9.9-cp35-cp35m-linux_x86_64.whl
 
 
-#Usage
-get priorbox of ssd detector
+## Usage
+<b>get priorbox of ssd detector<b/>
+  
+```
+$ python priorbox.py
+```
 
-python priorbox.py
+<b>convert model and run pedestrian detect<b/>
+  
+```
+$ python3.5 npu_ssd_det.py
+```
 
-convert model and run pedestrian detect
-python3.5 npu_ssd_det.py
+## Result
 
-#Result
+<p align="center">
+    <img src="test.png" width="360"\>
+</p>
