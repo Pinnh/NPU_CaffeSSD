@@ -15,7 +15,7 @@ you can find the pedestrian detecttion model of this project at [[here]](https:/
 
 ## Usage
 
-extract priorbox (you need change the caffe_root path to yours in priorbox.py, or may need install caffe-ssd first, caffe-ssd you can find at [[here]](https://github.com/weiliu89/caffe))
+extract priorbox (you need change the **caffe_root** path to yours in **priorbox.py**, or may need install **caffe-ssd** first, caffe-ssd you can find at [[here]](https://github.com/weiliu89/caffe))
   
 ```
 $ python priorbox.py
