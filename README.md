@@ -34,3 +34,7 @@ you can use NMS algorithm to remove redundant rects.
 <p align="center">
     <img src="test.png" width="600"\>
 </p>
+
+## Issues
+
+1. Different model has different **outlen** (npu_ssd_det.py),If you change the detection model, you should replace the **outlen** first,How to do this see [[issue]](https://github.com/Pinnh/NPU_CaffeSSD/issues/1)
