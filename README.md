@@ -36,5 +36,6 @@ you can use NMS algorithm to remove redundant rects.
 </p>
 
 ## Issues
+1. In order to get priorbox ,when you change the detection model, you should modify model's prototxt looks like **MobileNetSSD_deploy_truncated.prototxt**
 
-1. Different model has different **outlen** (npu_ssd_det.py),If you change the detection model, you should replace the **outlen** first,How to do this see [[issue]](https://github.com/Pinnh/NPU_CaffeSSD/issues/1)
+2. Different model has different **outlen** (npu_ssd_det.py),If you change the detection model, you should replace the **outlen** first,How to do this see [[issue]](https://github.com/Pinnh/NPU_CaffeSSD/issues/1)
